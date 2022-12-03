@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  }
+  main{
+    flex-grow: 1;
+  }
+
+  .title {
+    margin-top: 2rem;
+    text-align: center;
+    animation: animacionTitulo;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.69,1.21,1,2);
+  }
+
+  .sectionBanderas {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  .bandera {
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/pngwing.com.png),
+      linear-gradient(
+        bottom,
+        #0045ad 0% 33%,
+        white 33% 66%,
+        #0045ad 66% 100%
+      );
+    background-position: center;
+    background-size: 60px, auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/pngwing.com.png),
+      -webkit-linear-gradient(bottom, #0045ad 0% 33%, white 33% 66%, #0045ad
+            66% 100%);
+    background-position: center;
+    background-size: 60px, auto;
+    background-repeat: no-repeat;
+  }
+
+  .footer{
+    color: white;
+    padding: 2em 0 2em 2em;
+  }
+  @keyframes animacionTitulo {
+    0%{
+        transform: translateX(-80%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+  }
